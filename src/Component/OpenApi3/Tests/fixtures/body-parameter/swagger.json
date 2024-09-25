@@ -24,6 +24,29 @@
                 }
             }
         },
+        "/test-array-of-string": {
+            "post": {
+                "operationId": "Test array of string body parameter",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                }
+            }
+        },
         "/test-object": {
             "post": {
                 "operationId": "Test Object Body Parameter",
